@@ -115,9 +115,7 @@ body {
 }
 #home_content {
 	width: 100%;
-	padding: 20px;
 	margin: 0 auto;
-
 }
 .masonry {
     padding: 0;
@@ -125,6 +123,8 @@ body {
     -webkit-column-gap: 1.5em;
     column-gap: 1.5em;
     font-size: .85em;
+		margin: 40px;
+
 }
 
 .item {
