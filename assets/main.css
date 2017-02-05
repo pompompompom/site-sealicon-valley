@@ -137,6 +137,19 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-shadow: 2px 2px 2px 2px #ccc;
+		animation: item_animation 10s ease-in-out infinite;
+}
+
+@keyframes item_animation {
+  25% {
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: rotate(-0.5deg);
+  }
+  75% {
+    transform: rotate(0.5deg);
+  }
 }
 
 @media only screen and (min-width: 400px) {
