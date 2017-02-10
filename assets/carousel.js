@@ -13,30 +13,44 @@ $(document).ready(function() {
     }
     allItems[currItem].style.opacity = 1;
 
-    $(".next").on("click", {
-        d: "n"
-    }, rotate);
-    $(".prev").on("click", {
-        d: "p"
-    }, rotate);
+    $(".next").click(function() {
+        rotate("n");
+    });
+    $(".prev").click(function() {
+        rotate("p");
+    });
+    $("body").keydown(function(e) {
+        if (e.keyCode == 37) { // left
+            rotate("p");
+        } else if (e.keyCode == 39) { // right
+            rotate("n");
+        }
+    });
+    $(".carousel").on("swipeleft", function() {
+        rotate("p");
+    });
+
+    $(".carousel").on("swiperight", function() {
+        rotate("n");
+    });
 
     var fadeOutItem = 0;
 
     function rotate(e) {
         console.log("CIICK");
-        if (e.data.d == "n") {
+        if (e == "n") {
             currdeg = currdeg - degStep;
         }
-        if (e.data.d == "p") {
+        if (e == "p") {
             currdeg = currdeg + degStep;
         }
         var rawr = ((currdeg * (-1)) % 360) + 360;
         currItem = (rawr / degStep) % totalItems;
 
-        if (e.data.d == "n") {
+        if (e == "n") {
             fadeOutItem = (currItem + totalItems - 1) % totalItems;
         }
-        if (e.data.d == "p") {
+        if (e == "p") {
             fadeOutItem = (currItem + totalItems + 1) % totalItems;
         }
         console.log(currItem);
