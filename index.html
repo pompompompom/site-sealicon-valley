@@ -27,8 +27,17 @@
 </head>
 
 <body>
-    <head>
-  <head>
+    <!-- _includes/base.html -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang=" en ">
+
+<head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,15 +53,93 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 
+<script src="./assets/jquery.min.js"></script>
+<script src="./assets/scrolltest.js"></script>
+<style>
+.header_box {
+  position:relative;
+  height:970px;
+  background-image: url("./assets/landscape-1.png");
+	background-repeat:no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.logo {
+  width:100%;
+  height: 100px;
+  position:absolute;
+  top: 25%;
+  font-family:"Arial";
+  letter-spacing:20px;
+  text-transform:uppercase;
+  line-height:40px;
+  font-size:50px;
+  text-align:center;
+}
+.layer2 {
+  width: 100%;
+  height:970px;
+  background-image: url("./assets/landscape-2.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+  position:absolute;
+  top:0%;
+}
+.layer3 {
+  width: 100%;
+  height:970px;
+  background-image: url("./assets/landscape-3.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+  position:absolute;
+  top:0%;
+}
+.layer4 {
+  width: 100%;
+  height:970px;
+  background-image: url("./assets/landscape-4.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+  position:absolute;
+  top:0%;
+}
+.layer5 {
+  width: 100%;
+  height:970px;
+  background-image: url("./assets/landscape-5.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+  position:absolute;
+  z-index: 1000;
+}
+.smallheader {
+  width: 100%;
+  height:200px;
+//  background: pink;
+}
+</style>
 </head>
 <body>
-<div id="banner_container">
-  <a href="index.html">
-  <div id="title_container">
-    <h1 class="title_h1">Sealicon</h1>
-    <h1 class="title_h1">Valley</h1>
+<div class="header_box">
+  <div class="logo">
+    Sealicon<br/>
+    <br/>
+    Valley
   </div>
-</a>
+  <div class="layer2">
+  </div>
+  <div class="layer3">
+  </div>
+  <div class="layer4">
+  </div>
+  <div class="layer5">
+  </div>
+
+</div>
   <div style="width: 100%; text-align:center;" >
   <div id="social_container">
     <span>
@@ -87,8 +174,13 @@
     <a href="blog.html"><span class="menu_text">Blog</span></a>
   </div>
 </div>
+<!--
+<div style="height:2000px; width: 100%;">
+  <div class="smallheader"></div>
 </div>
+-->
 </body>
+</html>
 
 
     <div class="home_content">
@@ -112,7 +204,7 @@
                             </p>
                         <a class="post-link" href="./jekyll/update/2017/02/05/test-post.html">
                             <div class="excerpt_container">
-                                <p><img src="./assets/icebear.gif" />
+                                <p><img src="./assets/temp_card.png" />
 
 
 
@@ -136,7 +228,7 @@
                             </p>
                         <a class="post-link" href="./jekyll/update/2017/02/04/test-post.html">
                             <div class="excerpt_container">
-                                <p><img src="./assets/banner.jpg" />
+                                <p><img src="./assets/temp_card.png" />
 
 
 
