@@ -1,5 +1,11 @@
 var prevScroll = 0;
+var width = $( document ).width();
+var scrollWidthLimit = 841;
+
 $(window).scroll(function() {
+  if(width < scrollWidthLimit) {
+    return;
+  }
     var wScroll = document.body.scrollTop;
 
     // bigger divider -> longer it will remain on screen
