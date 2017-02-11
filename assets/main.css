@@ -293,6 +293,7 @@ body {
 		max-width: 1400px;
 		border-style: solid;
     border-width: 1px;
+		position:relative;
 }
 
 .ccontainer {
@@ -301,6 +302,7 @@ body {
 	height: 200px;
 	position: relative;
 	perspective: 1000px;
+	z-index: 100;
 }
 
 .carousel {
@@ -320,6 +322,7 @@ body {
 	font-size: 5em;
 	text-align: center;
 	color: #FFF;
+	z-index: 0;
 }
 
 .a {
@@ -347,13 +350,29 @@ body {
 	background-image:url("dolphin.png");
 	background-size: cover;
 }
-
-.next, .prev {
-	color:black;
+.navigation_holder {
+	width:600px;
+	height:100%;
+	position:absolute;
+	margin: 0 auto;
+	top:0px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
-
 .next {
+	width: 250px;
+	height:100%;
 	float:right;
+	background:yellow;
+	z-index: 1000;
+	perspective: 1200;
 }
 .prev {
+	width: 250px;
+	height:100%;
+	float:left;
+	background:red;
+	z-index: 1000;
 }
