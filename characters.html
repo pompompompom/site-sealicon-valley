@@ -58,6 +58,7 @@
 </head>
 
 <script src="./assets/jquery.min.js"></script>
+<script src="./assets/jquery.color.js"></script>
 <script src="./assets/scrolltest.js"></script>
 <style>
 .header_box {
@@ -125,10 +126,75 @@
   height:200px;
 //  background: pink;
 }
+.header_bar_container {
+    width: 100%;
+    height: 86px;
+    position: absolute;
+   border-bottom-width:1px;
+   border-bottom-color:rgba(255, 255, 255, 0.3);
+    position:fixed;
+   border-bottom-style: solid;
+   z-index: 1500;
+}
+.header_bar {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+  height: 86px;
+  background: transparent;
+  position: absolute;
+  font-family:"Arial";
+  letter-spacing:8px;
+  text-transform:uppercase;
+  line-height:20px;
+  font-size:20px;
+  vertical-align: middle;
+}
+.logo_header_bar {
+  float: left;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu_header_bar {
+  float:right;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+.menu_header_text {
+}
+.menu_header_text:link {
+  text-decoration: none;
+}
+.menu_header_text:visited {
+  text-decoration: none;
+}
+.menu_header_text:active {
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
 <div class="header_box">
+  <div class="header_bar_container">
+  <div class="header_bar">
+    <div class="logo_header_bar">
+    Sealicon Valley
+  </div>
+  <div class="menu_header_bar">
+    <a href="index.html"><span class="menu_header_text">Comics</span></a>
+    <a href="characters.html"><span class="menu_header_text">Characters</span></a>
+    <a href="blog.html"><span class="menu_header_text">Blog</span></a>
+  </div>
+  </div>
+</div>
   <div class="logo">
     Sealicon<br/>
     <br/>
@@ -168,14 +234,6 @@
     <span>
       <img class="social_img" src="./assets/pinterest.png">
     </span>
-  </div>
-</div>
-
-<div style="width: 100%; text-align:center;" >
-  <div id="menu_container">
-    <a href="index.html"><span class="menu_text">Comics</span></a>
-    <a href="characters.html"><span class="menu_text">Characters</span></a>
-    <a href="blog.html"><span class="menu_text">Blog</span></a>
   </div>
 </div>
 <!--

@@ -1,24 +1,42 @@
-$(window).scroll(function(){
-  var wScroll = document.body.scrollTop;
+var prevScroll = 0;
+$(window).scroll(function() {
+    var wScroll = document.body.scrollTop;
 
-  // bigger divider -> longer it will remain on screen
+    // bigger divider -> longer it will remain on screen
 
-  $(".logo").css({
-    "transform" : "translate(0px, "+ wScroll/2+"px)"
-  });
-
-
-  $(".layer2").css({
-    "transform" : "translate(0px, "+ wScroll/2+"px)"
-  });
+    $(".logo").css({
+        "transform": "translate(0px, " + wScroll / 2 + "px)"
+    });
 
 
-  $(".layer3").css({
-    "transform" : "translate(0px, "+ wScroll/8+"px)"
-  });
+    $(".layer2").css({
+        "transform": "translate(0px, " + wScroll / 2 + "px)"
+    });
 
 
-  $(".layer4").css({
-    "transform" : "translate(0px, "+ wScroll/5+"px)"
-  });
+    $(".layer3").css({
+        "transform": "translate(0px, " + wScroll / 8 + "px)"
+    });
+
+
+    $(".layer4").css({
+        "transform": "translate(0px, " + wScroll / 10 + "px)"
+    });
+
+    if (prevScroll == 0 && wScroll != 0) {
+        // change to white
+        $(".header_bar_container").animate({
+            backgroundColor: "white",
+            borderBottomColor: "rgba(211, 211, 211, 0.3)"
+        }, 200);
+
+    } else if (prevScroll != 0 && wScroll == 0) {
+        // change to transparent
+        $(".header_bar_container").animate({
+            backgroundColor: "transparent",
+            borderBottomColor: "rgba(255, 255, 255, 0.3)"
+        }, 200);
+    }
+
+    prevScroll = wScroll;
 });

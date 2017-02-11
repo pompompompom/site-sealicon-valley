@@ -56,6 +56,7 @@ a:active {
 body {
 	font-family: Quicksand;
 	color: #414141;
+	background-color: rgba(244, 250, 252, 0.7);
 }
 #banner_container {
 	position: relative;
