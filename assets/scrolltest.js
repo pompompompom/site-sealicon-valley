@@ -3,11 +3,9 @@ var width = $( document ).width();
 var scrollWidthLimit = 841;
 
 $(window).scroll(function() {
-  if(width < scrollWidthLimit) {
-    return;
-  }
     var wScroll = document.body.scrollTop;
 
+      if(width >= scrollWidthLimit) {
     // bigger divider -> longer it will remain on screen
 
     $(".logo").css({
@@ -28,6 +26,7 @@ $(window).scroll(function() {
     $(".layer4").css({
         "transform": "translate(0px, " + wScroll / 10 + "px)"
     });
+  }
 
     if (prevScroll == 0 && wScroll != 0) {
         // change to white

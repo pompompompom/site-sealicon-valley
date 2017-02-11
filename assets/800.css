@@ -76,7 +76,7 @@
 }
 .header_bar {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1460px;
   margin-left: auto;
 margin-right: auto;
 left: 0;
@@ -84,11 +84,6 @@ right: 0;
   height: 86px;
   background: transparent;
   position: absolute;
-  font-family:"Arial";
-  letter-spacing:8px;
-  text-transform:uppercase;
-  line-height:20px;
-  font-size:20px;
   vertical-align: middle;
 }
 .logo_header_bar {
@@ -97,8 +92,13 @@ right: 0;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  margin-left: 20px;
   font-weight: bold;
-  margin-left: 50px;
+  font-family:"Arial";
+  letter-spacing:6px;
+  text-transform:uppercase;
+  line-height:20px;
+  font-size:20px;
 }
 .menu_header_bar {
   float:right;
@@ -109,7 +109,7 @@ right: 0;
   z-index: 10000;
   vertical-align: middle;
   padding:0;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .menu_header_text {
