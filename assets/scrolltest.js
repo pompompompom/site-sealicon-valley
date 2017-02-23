@@ -1,12 +1,13 @@
 var prevScroll = 0;
 var width = $( document ).width();
 var scrollWidthLimit = 841;
-
+/*
 $(window).scroll(function() {
     var wScroll = document.body.scrollTop;
 
       if(width >= scrollWidthLimit) {
     // bigger divider -> longer it will remain on screen
+
 
     $(".logo").css({
         "transform": "translate(0px, " + wScroll / 2 + "px)"
@@ -28,6 +29,7 @@ $(window).scroll(function() {
     });
   }
 
+
     if (prevScroll == 0 && wScroll != 0) {
         // change to white
         $(".header_bar_container").animate({
@@ -45,3 +47,4 @@ $(window).scroll(function() {
 
     prevScroll = wScroll;
 });
+*/

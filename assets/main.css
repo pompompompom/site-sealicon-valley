@@ -1,5 +1,5 @@
 h1 {
-	font-family: Quicksand;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
@@ -7,7 +7,7 @@ h1 {
 	line-height: 26.4px;
 }
 h3 {
-	font-family: Quicksand;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -15,7 +15,7 @@ h3 {
 	line-height: 15.4px;
 }
 p {
-	font-family: Quicksand;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -23,7 +23,7 @@ p {
 	line-height: 20px;
 }
 blockquote {
-	font-family: Quicksand;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
@@ -31,7 +31,7 @@ blockquote {
 	line-height: 30px;
 }
 pre {
-	font-family: Quicksand;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	font-style: normal;
 	font-variant: normal;
@@ -54,9 +54,8 @@ a:active {
     text-decoration: none;
 }
 body {
-	font-family: Quicksand;
+	font-family: 'Open Sans', sans-serif;
 	color: #414141;
-	background-color: rgba(244, 250, 252, 0.7);
 }
 #banner_container {
 	position: relative;
@@ -87,19 +86,6 @@ body {
 	letter-spacing: 4px;
 	text-transform: uppercase;
 
-}
-#social_container {
-	margin: 0 auto;
-	display: inline-block;
-	margin-top: 10px;
-}
-
-.social_img {
-	width: 39px;
-	height: 39px;
-	object-fit: cover;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 #menu_container {
 	margin: 0 auto;
