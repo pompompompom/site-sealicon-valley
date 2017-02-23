@@ -106,9 +106,9 @@ body {
 }
 .masonry {
     padding: 0;
-    -moz-column-gap: 20px;
-    -webkit-column-gap: 20px;
-    column-gap: 20px;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
     font-size: .85em;
 		margin: 40px;
 
@@ -117,13 +117,15 @@ body {
 .item {
     display: inline-block;
     background: #fff;
-    padding: 1em;
-    margin: 0 0 1.5em;
+    padding: 2px;
+    margin: 0 0 30px;
     width: 100%;
+		/*
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-shadow: 2px 2px 2px 2px #ccc;
+		*/
 		/* animation: item_animation 10s ease-in-out infinite; */
 }
 
