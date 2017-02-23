@@ -6,6 +6,17 @@
     display: block;
 }
 
+.header_box_small {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: block;
+    background-image: url("banner_small.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
 .logo {
     width: 450px;
     height: 83px;
@@ -123,10 +134,11 @@
     width: 100%;
     height: 86px;
     position: absolute;
-    border-bottom-width: 1px;
-    border-bottom-color: rgba(255, 255, 255, 0.3);
+    //border-bottom-width: 1px;
+    //border-bottom-color: rgba(255, 255, 255, 0.3);
+    //background-color: #41b0f7;
     position: fixed;
-    border-bottom-style: solid;
+    //border-bottom-style: solid;
     z-index: 1500;
 }
 
