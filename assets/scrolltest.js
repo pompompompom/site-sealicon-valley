@@ -1,7 +1,7 @@
-var prevScroll = 0;
+/*var prevScroll = 0;
 var width = $( document ).width();
 var scrollWidthLimit = 841;
-/*
+
 $(window).scroll(function() {
     var wScroll = document.body.scrollTop;
 
