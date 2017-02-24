@@ -59,9 +59,18 @@ a:active {
     text-decoration: none;
 }
 
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #414141;
+    min-height:100%;
+    height: 100%;
+    margin: 0;
 }
 
 #banner_container {
@@ -617,4 +626,84 @@ font-size: 16px;
     float: left;
     background: red;
     z-index: 1000;
+
+}
+
+.about_container {
+	width: 100%;
+	max-width: 900px;
+	height: 340px;
+	display: block;
+	margin: 0 auto;
+ box-sizing:border-box;  /** add this **/
+ -moz-box-sizing:border-box; /** add this **/
+ -webkit-box-sizing:border-box; /** add this **/
+ -ms-box-sizing:border-box; /** add this **/
+ margin-bottom: 30px;
+}
+.about_pic {
+	width: 45%;
+	height: 340px;
+	float:left;
+	background-image: url("about_temp_img.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 10px;
+ box-sizing:border-box;  /** add this **/
+ -moz-box-sizing:border-box; /** add this **/
+ -webkit-box-sizing:border-box; /** add this **/
+ -ms-box-sizing:border-box; /** add this **/
+ background-position: center;
+}
+
+.about_text {
+	position:relative;
+	float: right;
+	width: 45%;
+	display:block;
+	padding: 10px;
+	color: #636263;
+ box-sizing:border-box;  /** add this **/
+ -moz-box-sizing:border-box; /** add this **/
+ -webkit-box-sizing:border-box; /** add this **/
+ -ms-box-sizing:border-box; /** add this **/
+}
+
+
+@media screen and (max-width: 800px)   {
+    .about_pic{
+        width:100%;
+        float:none;
+    }
+		.about_text{
+        width:100%;
+        float:none;
+    }
+
+		.about_container{
+			height: 100%;
+
+		}
+		.footer
+		{
+		}
+	}
+
+
+.about_title {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.about_content {
+	margin-top: 20px;
+	line-height: 22px;
+	font-size: 16px;
+}
+
+.about_email {
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
