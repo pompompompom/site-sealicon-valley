@@ -14,6 +14,13 @@ if(url.includes("characters.html") || url.includes("blog.html") || url.includes(
   $(".header_box_small").css({
       "display": "block"
   });
+
+if(width < scrollWidthLimit) {
+  $(".header_box_small").css({
+      "background-image": "url(\"assets/banner-mobile.png\")"
+  });
+}
+
   homeBig = false;
 } else {
   $(".header_box").css({
