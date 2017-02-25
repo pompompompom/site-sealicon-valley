@@ -38,10 +38,9 @@ $(document).ready(function() {
         });
         homeBig = true;
     } else {
-
         if (width < scrollWidthLimit) {
-            console.log("url(" + base + "/assets/banner_mobile.png\")");
-            $(".header_box_small").style.backgroundImage = "url(" + base + "/assets/banner_mobile.png\")";
+            console.log("url('" + base + "/assets/banner_mobile.png')");
+            $(".header_box_small").css("backgroundImage" ,"url('" + base + "/assets/banner_mobile.png')");
         }
 
         $(".header_box").css({
