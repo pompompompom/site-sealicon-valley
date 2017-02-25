@@ -231,11 +231,12 @@ body {
 }
 
 .subscribe_container {
-	width: 500px; margin: 0 auto;
+	width: 100%;
+	max-width: 500px; margin: 0 auto;
 	height:100%;
 }
 .subscribe_email {
-    width: 260px;
+    width: 56%;
     padding-left:3px;
 		height:100%;
     position: relative;
@@ -250,7 +251,7 @@ body {
 		color:#41b0f7;
 }
 .subscribe_button {
-	width: 200px;
+	width: 40%;
 	height:100%;
 	line-height: 40px;
   text-align: center;
