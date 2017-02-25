@@ -230,6 +230,60 @@ body {
 	width: 100%;
 }
 
+.bottom_tabs {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+	position:fixed;;
+	bottom:0;
+  background-color: white;
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+.bottom_tabs {
+  display: block;
+}
+.footer {
+  display: none;
+}
+#social_container_small {
+  display:none;
+}
+}
+
+.bottom_tab_wrapper {
+  width: 24%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+
+}
+
+.bottom_tab_img {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      object-fit: contain;
+      background-image: url("grey_circle.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1000;
+}
+
+.bottom_tab_wrapper .menu_header_text {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+
+
+
 .subscribe_container {
 	width: 100%;
 	max-width: 500px; margin: 0 auto;

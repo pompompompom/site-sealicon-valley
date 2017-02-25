@@ -40,7 +40,7 @@ $(document).ready(function() {
     } else {
         if (width < scrollWidthLimit) {
             console.log("url('" + base + "/assets/banner_mobile.png')");
-            $(".header_box_small").css("backgroundImage" ,"url('" + base + "/assets/banner_mobile.png')");
+            $(".header_box_small").css("backgroundImage", "url('" + base + "/assets/banner_mobile.png')");
         }
 
         $(".header_box").css({
