@@ -616,10 +616,23 @@
         
 
     </div>
-    <div class="footer">
+    <!-- _includes/base.html -->
+
+
+
+
+<head>
+  <script>
+    function subscribe() {
+      var email = document.getElementById('input_email').value;
+      console.log(email);
+    }
+  </script>
+</head>
+<div class="footer">
     <div class="subscribe_container">
-        <input type="text" class="subscribe_email" placeholder="Email Address"/>
-        <div class="subscribe_button">
+        <input type="text" class="subscribe_email" id="input_email" placeholder="Email Address"/>
+        <div class="subscribe_button" onclick="subscribe()">
             <span style="vertical-align:middle;display:table-cell;">
               Subscribe
             </span>
