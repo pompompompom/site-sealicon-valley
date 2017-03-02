@@ -47,11 +47,13 @@
         var winLeft = (screen.width / 2) - (winWidth / 2);
 
         function sharePost(index) {
+          var url = document.URL;
+          console.log("url: " + url);
             console.log("index: " + index);
             switch (index) {
                 case 1:
                     console.log("1111");
-                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + 'Blog 0' + '&p[summary]=' + 'rawr  raw ra r' + '&p[url]=' + '../../../../../test/blog/2017/02/06/test-post.html' + '&p[images][0]=' + '', 'sharer', 'top=' +
+                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + 'Blog 0' + '&p[summary]=' + 'rawr  raw ra r' + '&p[url]=' + url + '&p[images][0]=' + '', 'sharer', 'top=' +
                         winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
                     break;
             }

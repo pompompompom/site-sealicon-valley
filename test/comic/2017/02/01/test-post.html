@@ -47,11 +47,13 @@
         var winLeft = (screen.width / 2) - (winWidth / 2);
 
         function sharePost(index) {
+          var url = document.URL;
+          console.log("url: " + url);
             console.log("index: " + index);
             switch (index) {
                 case 1:
                     console.log("1111");
-                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + 'Post 0202' + '&p[summary]=' + 'rawr  raw ra r' + '&p[url]=' + '../../../../../test/comic/2017/02/01/test-post.html' + '&p[images][0]=' + '<img src="BASE/assets/temp_dolphin.png" >', 'sharer', 'top=' +
+                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + 'Post 0202' + '&p[summary]=' + 'rawr  raw ra r' + '&p[url]=' + url + '&p[images][0]=' + '<img src="BASE/assets/temp_dolphin.png" >', 'sharer', 'top=' +
                         winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
                     break;
             }
