@@ -12,7 +12,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Post 0202</title>
+  <title>Sealicon Valley</title>
   <meta name="description" content="Test post for theme">
 
   <link href='../../../../../assets/reset_css.css' rel='stylesheet'>
@@ -33,10 +33,43 @@
   <script src="../../../../../assets/analytics.js"></script>
 </head>
 
+
+    <meta property="og:url" content="../../../../../test/comic/2017/02/01/test-post.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Post 0202" />
+    <meta property="og:description" content="rawr awr wraw r" />
+    <meta property="og:image" content='<img src="BASE/assets/temp_dolphin.png" >' />
+
+    <script>
+        var winWidth = 520;
+        var winHeight = 350;
+        var winTop = (screen.height / 2) - (winHeight / 2);
+        var winLeft = (screen.width / 2) - (winWidth / 2);
+
+        function sharePost(index) {
+            console.log("index: " + index);
+            switch (index) {
+                case 1:
+                    console.log("1111");
+                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + 'Post 0202' + '&p[summary]=' + 'rawr  raw ra r' + '&p[url]=' + '../../../../../test/comic/2017/02/01/test-post.html' + '&p[images][0]=' + '<img src="BASE/assets/temp_dolphin.png" >', 'sharer', 'top=' +
+                        winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+                    break;
+            }
+        }
+    </script>
 </head>
 
 <body>
-
+    <!--
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+-->
     <!-- _includes/base.html -->
 
 
@@ -51,7 +84,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Post 0202</title>
+  <title>Sealicon Valley</title>
   <meta name="description" content="Test post for theme">
 
   <link href='../../../../../assets/reset_css.css' rel='stylesheet'>
@@ -92,7 +125,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Post 0202</title>
+  <title>Sealicon Valley</title>
   <meta name="description" content="Test post for theme">
 
   <link href='../../../../../assets/reset_css.css' rel='stylesheet'>
@@ -288,7 +321,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Post 0202</title>
+  <title>Sealicon Valley</title>
   <meta name="description" content="Test post for theme">
 
   <link href='../../../../../assets/reset_css.css' rel='stylesheet'>
@@ -469,7 +502,7 @@
                     <div class="social_img">
                     </div>
                 </a>
-                <a href="https://www.facebook.com/sealiconvalley/">
+                <a href="javascript:void(0)" onclick="sharePost(1)">
                     <div class="social_img">
                     </div>
                 </a>
@@ -500,9 +533,15 @@
             </div>
         </div>
 
-        
-        
-        
+        <!-- Your share button code -->
+        <!--
+          <div class="fb-share-button"
+            data-href="http://www.sealiconvalley.com/test/comic/2017/02/04/test-post.html"
+            data-layout="button_count">
+          </div>
+        -->
+
+          
 
         <div class="related_posts">
             <div class="related_posts_prompt">
@@ -512,98 +551,79 @@
 
 
 
-                <div class="masonry">
-                    <ul class="post-list">
-                        
-                        
-                        
-                        
-                        
-                        
-                        <li>
-                            <div class="item">
-                                <a class="post-link" href="../../../../../test/comic/2017/02/04/test-post.html">
-                                    <div class="related_post_excerpt_container">
-                                        <img src="../../../../../assets/temp_shark.png" >
+            <div class="masonry">
+                <ul class="post-list">
+                         
+                    <li>
+                        <div class="item">
+                            <a class="post-link" href="../../../../../test/comic/2017/02/04/test-post.html">
+                                <div class="related_post_excerpt_container">
+                                    <img src="../../../../../assets/temp_shark.png" >
 
-                                    </div>
-                                    <div class="related_post_title">
-                                      Post Rawrrr
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+                                </div>
+                                <div class="related_post_title">
+                                    Post Rawrrr
+                                </div>
+                            </a>
+                        </div>
+                    </li>
                         
-                              
+                    <li>
+                        <div class="item">
+                            <a class="post-link" href="../../../../../test/comic/2017/02/02/test-post.html">
+                                <div class="related_post_excerpt_container">
+                                    <img src="../../../../../assets/temp_octo.png" >
 
-                        
-                        
-                        
-                        <li>
-                            <div class="item">
-                                <a class="post-link" href="../../../../../test/comic/2017/02/02/test-post.html">
-                                    <div class="related_post_excerpt_container">
-                                        <img src="../../../../../assets/temp_octo.png" >
+                                </div>
+                                <div class="related_post_title">
+                                    Post 020202
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                          
+                    <li>
+                        <div class="item">
+                            <a class="post-link" href="../../../../../test/comic/2017/01/02/temp-post1.html">
+                                <div class="related_post_excerpt_container">
+                                    <img src="../../../../../assets/temp_green.png" >
 
-                                    </div>
-                                    <div class="related_post_title">
-                                      Post 020202
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        
-                              
-
-                        
-                        
-                        
-                        
-                        
-                        <li>
-                            <div class="item">
-                                <a class="post-link" href="../../../../../test/comic/2017/01/02/temp-post1.html">
-                                    <div class="related_post_excerpt_container">
-                                        <img src="../../../../../assets/temp_green.png" >
-
-                                    </div>
-                                    <div class="related_post_title">
-                                      Temp post 2
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        
-                              
-                                
-                    </ul>
-                </div>
+                                </div>
+                                <div class="related_post_title">
+                                    Temp post 2
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                      
+                </ul>
+            </div>
 
 
             <div class="related_posts_container">
 
-                         
+                     
 
-                    <!--<li><a href="/test/comic/2017/02/04/test-post.html">Post Rawrrr</a></li>-->
+                <!--<li><a href="/test/comic/2017/02/04/test-post.html">Post Rawrrr</a></li>-->
 
-                    <div class="related_post_preview">
+                <div class="related_post_preview">
 
-                    </div>
-                      
+                </div>
+                  
 
-                    <!--<li><a href="/test/comic/2017/02/02/test-post.html">Post 020202</a></li>-->
+                <!--<li><a href="/test/comic/2017/02/02/test-post.html">Post 020202</a></li>-->
 
-                    <div class="related_post_preview">
+                <div class="related_post_preview">
 
-                    </div>
-                        
+                </div>
+                    
 
-                    <!--<li><a href="/test/comic/2017/01/02/temp-post1.html">Temp post 2</a></li>-->
+                <!--<li><a href="/test/comic/2017/01/02/temp-post1.html">Temp post 2</a></li>-->
 
-                    <div class="related_post_preview">
+                <div class="related_post_preview">
 
-                    </div>
-                       
+                </div>
+                   
 
             </div>
 
