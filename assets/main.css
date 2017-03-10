@@ -751,6 +751,9 @@ body {
     /** add this **/
 }
 
+.characters_container {
+  margin-bottom: 0px;
+}
 @media screen and (max-width: 800px) {
     .about_pic {
         width: 100%;
@@ -762,9 +765,19 @@ body {
     }
     .about_container {
         height: 100%;
+        margin-bottom: 80px;
     }
     .footer {}
+
+    .characters_container {
+      margin-bottom: 70px;
+    }
+
+    .home_content {
+      margin-bottom: 70px;
+    }
 }
+
 
 .about_title {
     font-weight: bold;
@@ -803,7 +816,7 @@ body {
 .rounded_image_container {
   width: 100%;
   position: absolute;
-  top: -108px;
+  top: -100px;
   text-align: center;
 }
 .rounded_image {
@@ -969,39 +982,11 @@ border: 8px solid #abb6d9;
     .front,
     .back,
     .flipper {
-        width: 216px;
-        height: 216px;
+        width: 200px;
+        height: 200px;
     }
 
     .flip-container {
         text-align: center;
         margin: 0 auto;
     }
-
-
-/*
-#octopus {
-  background-image: url("octopus2.png");
-    width: 229px;
-}
-
-#dolphin {
-  background-image: url("dolphin2.png");
-    width: 229px;
-}
-
-#narwhal {
-  background-image: url("narwhal2.png");
-    width: 229px;
-}
-
-#shark {
-  background-image: url("shark2.png");
-    width: 229px;
-}
-
-#bubble {
-  background-image: url("bubble2.png");
-    width: 229px;
-}
-*/
