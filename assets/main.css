@@ -784,146 +784,6 @@ body {
     letter-spacing: 2px;
 }
 
-.fish_container {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.fish_img {
-    max-height: 275px;
-    min-width: 100px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    ;
-    object-fit: cover;
-    margin-left: 10px;
-    margin-right: 10px;
-    opacity: 0.5;
-}
-
-
-.fish_img:hover {
-    transform: scale(1.2);
-    transition: transform;
-    transition-duration: 1000;
-    opacity: 1.0;
-}
-
-
-#dolphin {
-    margin-right: 20px;
-}
-
-#narwhal {
-    margin-right: 30px;
-}
-
-.fish_text_container {
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-    color: #5b5b5b;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    /** add this **/
-    -moz-box-sizing: border-box;
-    /** add this **/
-    -webkit-box-sizing: border-box;
-    /** add this **/
-    -ms-box-sizing: border-box;
-    /** add this **/
-}
-
-.fish_name {
-    display: inline-block;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #5b5b5b;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.fish_title {
-    display: inline-block;
-    font-size: 20px;
-    margin-left: 15px;
-    color: #8e8e8e;
-}
-
-.fish_desc {
-    margin-top: 20px;
-    display: block;
-    width: 100%;
-    letter-spacing: 1px;
-    margin-bottom: 50px;
-}
-
-.fish_container2 {
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-    color: #5b5b5b;
-}
-
-.fish_item {
-    width: 100%;
-    height: 366px;
-    border: 3px solid #e8ecef;
-    -webkit-border-radius: 80px;
-    -moz-border-radius: 80px;
-    border-radius: 80px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    //box-shadow: 5px 5px 5px #e8ecef;
-    overflow: hidden;
-}
-
-.fish_icon {
-    width: 37%;
-    height: 100%;
-    display: inline-block;
-    float: left;
-    object-fit: cover;
-    //margin-right:60px;
-    text-align: center;
-    //background-color: #e8ecef;
-    background-color: #e8f2fb;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    /** add this **/
-    -moz-box-sizing: border-box;
-    /** add this **/
-    -webkit-box-sizing: border-box;
-    /** add this **/
-    -ms-box-sizing: border-box;
-    /** add this **/
-}
-
-.fish_content {
-    display: inline-block;
-    width: 63%;
-    float: right: vertical-align: middle;
-    max-height: 100%;
-    height: 100%;
-    padding-top: 90px;
-    //  background-color: #e8f2fb;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    /** add this **/
-    -moz-box-sizing: border-box;
-    /** add this **/
-    -webkit-box-sizing: border-box;
-    /** add this **/
-    -ms-box-sizing: border-box;
-    /** add this **/
-}
-
 .fish_ll {
   position: relative;
   text-align: center;
@@ -943,7 +803,7 @@ body {
 .rounded_image_container {
   width: 100%;
   position: absolute;
-  top: -100px;
+  top: -108px;
   text-align: center;
 }
 .rounded_image {
@@ -952,11 +812,16 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   margin: 0 auto;
-
 }
 
 #rounded_octopus {
 background-image: url("octopus_icon.png");
+border: 8px solid #fce4d9;
+background-size: cover;
+}
+
+#rounded_octopus_back {
+background-image: url("shark_icon.png");
 border: 8px solid #fce4d9;
 background-size: cover;
 }
@@ -967,8 +832,20 @@ border: 8px solid #c3dbea;
 background-size: cover;
 }
 
+#rounded_dolphin_back {
+background-image: url("shark_icon.png");
+border: 8px solid #c3dbea;
+background-size: cover;
+}
+
 #rounded_narwhal {
 background-image: url("narwhal_icon.png");
+border: 8px solid #f9b9c8;
+background-size: cover;
+}
+
+#rounded_narwhal_back {
+background-image: url("shark_icon.png");
 border: 8px solid #f9b9c8;
 background-size: cover;
 }
@@ -979,7 +856,19 @@ border: 8px solid #bccdef;
 background-size: cover;
 }
 
+#rounded_bubble_back {
+background-image: url("shark_icon.png");
+border: 8px solid #bccdef;
+background-size: cover;
+}
+
 #rounded_shark {
+background-image: url("shark_icon.png");
+background-size: cover;
+border: 8px solid #abb6d9;
+}
+
+#rounded_shark_back {
 background-image: url("shark_icon.png");
 background-size: cover;
 border: 8px solid #abb6d9;
@@ -1023,6 +912,71 @@ border: 8px solid #abb6d9;
 }
 
 
+    .flipped {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+    .flipper {
+        /*transition*/
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
+        /*transform-style*/
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: relative;
+        -webkit-tap-highlight-color: transparent;
+    }
+    /* front pane, placed above back */
+
+    .front {
+        z-index: 2;
+    }
+    /* back, initially hidden pane */
+
+    .back {
+        /*transform*/
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    /* hide back of pane during swap */
+
+    .front,
+    .back {
+        /*backface-visibility*/
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .flip-container,
+    .front,
+    .back,
+    .flipper {
+        width: 216px;
+        height: 216px;
+    }
+
+    .flip-container {
+        text-align: center;
+        margin: 0 auto;
+    }
 
 
 /*
