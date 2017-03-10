@@ -22,6 +22,48 @@ $(document).ready(function() {
     console.log(width);
     var scrollWidthLimit = 841;
 
+/*
+    $(".menu_header_text").click(function () {
+        console.log("CLICK");
+        $(".menu_header_text").removeClass("active");
+    $(this).addClass("active");
+    });
+    */
+
+/*
+    $(".menu_header_text").css({
+      "color": "white"
+    });
+    */
+/*
+if (url.endsWith(".com/") || url.endsWith("index.html") || url.endsWith(":4000/")) {
+/*
+  $("#header_text_comic.menu_header_text").css({
+    "color": "red"
+  });
+*/
+/*
+  $("#header_text_comic.menu_header_text").addClass("active");
+} else if(url.endsWith("blog.html")){
+
+  $("#header_text_blog.menu_header_text").css({
+    "color": "red"
+  });
+} else if(url.endsWith("characters.html")) {
+
+  $("#header_text_characters.menu_header_text").css({
+    "color": "red"
+  });
+} else if(url.endsWith("about.html")) {
+
+  $("#header_text_about.menu_header_text").css({
+    "color": "red"
+  });
+}
+
+*/
+
+
     if ((url.endsWith(".com/") || url.endsWith("index.html") || url.endsWith(":4000/")) && (width >= scrollWidthLimit)) {
 
         $(".header_box").css({

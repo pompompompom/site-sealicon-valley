@@ -271,6 +271,14 @@ body {
 
 .bottom_tab_wrapper .menu_header_text {
     margin-top: 10px;
+    color: grey;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+
+.bottom_tab_wrapper .menu_header_text_current {
+    margin-top: 10px;
     color: black;
     text-align: center;
     display: block;
@@ -712,7 +720,7 @@ body {
     /** add this **/
     -ms-box-sizing: border-box;
     /** add this **/
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .about_pic {
