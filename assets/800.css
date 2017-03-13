@@ -15,7 +15,25 @@
      background-position: 70% center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#header_box_small_home {
+  display: none;
+  background-image: url("banner_mobile.png");
+}
+
+@media only screen and (max-width: 900px) {
+  .header_box_small {
+    background-image: url("banner_mobile.png");
+  }
+
+  .header_box {
     display: none;
+  }
+
+  #header_box_small_home {
+    display: block;
+  }
 }
 
 .logo {
@@ -146,7 +164,7 @@
     //background-color: #41b0f7;
     position: fixed;
     //border-bottom-style: solid;
-    z-index: 1500;
+    z-index: 12000;
 }
 
 .header_bar {
@@ -164,19 +182,21 @@
 
 .logo_header_bar {
     float: left;
+    margin-left: 20px;
     display: inline-block;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10000;
     vertical-align: middle;
-    padding: 0 20px;
-    width: 290px;
-    box-sizing: border-box;
+    padding: 0;
+    width: 250px;
 }
 
 .header_logo {
   width: 100%;
+  height:50px;
+  background-image: url("logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: table-cell;;
@@ -184,54 +204,72 @@
   float:left;
 }
 
-#social_container_small {
+.social_container_small {
     z-index: 100;
     position: absolute;
     top: 50%;
     left: 290px;
     transform: translate(0%, -50%);
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
+    min-width: 400px;
 }
 
+.home_logo_header_bar {
+  opacity: 0;
+}
+
+.home_social_container_small {
+  opacity: 0;
+}
 .social_img_small {
     width: 30px;
     height: 30px;
-    display: block;
-
-    border-radius: 50%;
-    background: white;
-
-    /*
+    display: inline-block;
     object-fit: contain;
+    margin-left: 10px;
+    margin-right: 10px;
     background-image: url("circle.png");
     background-size: contain;
     background-repeat: no-repeat;
-    */
-
     z-index: 1000;
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width:841px) {
+  .home_logo_header_bar {
+    opacity: 1;
+  }
+
+  .home_social_container_small {
+    opacity: 1;
+  }
+
+  .header_logo {
+    width: 180px;
+    height:34px;
+
+  }
 
   .logo_header_bar {
-    width: 50%;
-    max-width: 250px;
+    width: 180px;
   }
 
-  #social_container_small {
-    left: auto;
-    right: 0;
-    max-width: 50%;
-    padding-right: 20px;
-    padding-left: 10px;
+  .social_container_small {
+    left: 210px;
+    width: 140px;
+    max-width: 190px;
   }
-
   .social_img_small {
+    margin-left: 2px;
+    margin-right:2px;
+  }
+
+  .header_bar {
+    height: 60px;
+  }
+
+  .header_bar_container {
+    height: 60px;
   }
 }
-
 
 .menu_header_bar {
     float: right;

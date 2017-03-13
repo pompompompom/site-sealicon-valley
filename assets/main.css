@@ -246,6 +246,9 @@ body {
     .footer {
         display: none;
     }
+    #social_container_small {
+        display: none;
+    }
 }
 
 .bottom_tab_wrapper {
