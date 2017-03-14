@@ -465,4 +465,12 @@ input#mobile_subscribe_button {
     #mobile_sub_container {
         display: block;
     }
+
+    .logo_header_bar {
+      margin-left: 5px;
+    }
+
+    .social_container_small {
+      left: 208px;
+    }
 }
