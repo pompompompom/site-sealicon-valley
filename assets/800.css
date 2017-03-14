@@ -82,6 +82,26 @@
     z-index: 1000;
 }
 
+.social_img.ig_grey {
+  background-image: url("ig_icon_grey.png");
+}
+
+.social_img.fb_grey {
+  background-image: url("fb_icon_grey.png");
+}
+
+.social_img.twitter_grey {
+  background-image: url("twitter_icon_grey.png");
+}
+
+.social_img.snap_grey {
+  background-image: url("snap_icon_grey.png");
+}
+
+.social_img.tumblr_grey {
+  background-image: url("tumblr_icon_grey.png");
+}
+
 .layer1 {
     width: 100%;
     height: 100%;
@@ -231,6 +251,26 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1000;
+}
+
+.social_ig {
+  background-image: url("ig_icon_blue.png");
+}
+
+.social_fb {
+  background-image: url("fb_icon_blue.png");
+}
+
+.social_twitter {
+  background-image: url("twitter_icon_blue.png");
+}
+
+.social_snap {
+  background-image: url("snap_icon_blue.png");
+}
+
+.social_tumblr {
+  background-image: url("tumblr_icon_blue.png");
 }
 
 @media screen and (max-width:841px) {

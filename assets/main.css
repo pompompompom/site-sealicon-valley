@@ -140,6 +140,7 @@ body {
     padding: 2px;
     margin: 0 0 30px;
     width: 100%;
+
     /* animation: item_animation 10s ease-in-out infinite; */
 }
 
@@ -193,6 +194,14 @@ body {
     }
 }
 
+.excerpt_container {
+
+  border: 1px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
 .excerpt_container img {
     width: 100%;
 }
@@ -727,7 +736,7 @@ body {
     width: 45%;
     height: 340px;
     float: left;
-    background-image: url("about_temp_img.png");
+    background-image: url("annmita.png");
     background-repeat: no-repeat;
     background-size: contain;
     padding: 10px;
@@ -836,61 +845,61 @@ body {
 }
 
 #rounded_octopus {
-background-image: url("octopus_icon.png");
+background-image: url("splash_octopus.png");
 border: 8px solid #fce4d9;
 background-size: cover;
 }
 
 #rounded_octopus_back {
-background-image: url("shark_icon.png");
+background-image: url("octopus_icon_power.png");
 border: 8px solid #fce4d9;
 background-size: cover;
 }
 
 #rounded_dolphin {
-background-image: url("dolphin_icon.png");
+background-image: url("splash_dolphin.png");
 border: 8px solid #c3dbea;
 background-size: cover;
 }
 
 #rounded_dolphin_back {
-background-image: url("shark_icon.png");
+background-image: url("dolphin_icon_power.png");
 border: 8px solid #c3dbea;
 background-size: cover;
 }
 
 #rounded_narwhal {
-background-image: url("narwhal_icon.png");
+background-image: url("splash_narwhal.png");
 border: 8px solid #f9b9c8;
 background-size: cover;
 }
 
 #rounded_narwhal_back {
-background-image: url("shark_icon.png");
+background-image: url("narwhal_icon_power.png");
 border: 8px solid #f9b9c8;
 background-size: cover;
 }
 
 #rounded_bubble {
-background-image: url("bubble_icon.png");
+background-image: url("splash_bubble.png");
 border: 8px solid #bccdef;
 background-size: cover;
 }
 
 #rounded_bubble_back {
-background-image: url("shark_icon.png");
+background-image: url("bubble_icon_power.png");
 border: 8px solid #bccdef;
 background-size: cover;
 }
 
 #rounded_shark {
-background-image: url("shark_icon.png");
+background-image: url("splash_shark.png");
 background-size: cover;
 border: 8px solid #abb6d9;
 }
 
 #rounded_shark_back {
-background-image: url("shark_icon.png");
+background-image: url("shark_icon_power.png");
 background-size: cover;
 border: 8px solid #abb6d9;
 }
