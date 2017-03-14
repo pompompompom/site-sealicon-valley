@@ -333,8 +333,8 @@ body {
     height: 39px;
     text-align: center;
     font-size: 16px;
+    color:white;
     text-transform: uppercase;
-    font-weight: bold;
     border: 1px solid #41b0f7;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -733,6 +733,11 @@ body {
   width: 80%;
 }
 
+.about_pic.thankyou {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .about_text {
   color: #636263;
   text-align: left;
@@ -743,6 +748,10 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
+}
+
+.about_text.thankyou {
+  text-align: center;
 }
 /*
 .about_container {

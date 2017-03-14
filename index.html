@@ -436,22 +436,15 @@
 
 
 <head>
-  <script>
-    function subscribe() {
-      var email = document.getElementById('input_email').value;
-      console.log(email);
-    }
-  </script>
 </head>
 <div class="footer">
+  <form action="https://getsimpleform.com/messages?form_api_token=d9fbe3b05597de14b1e5cc7db2ceea84" method="post">
     <div class="subscribe_container">
-        <input type="text" class="subscribe_email" id="input_email" placeholder="Email Address"/>
-        <div class="subscribe_button" onclick="subscribe()">
-            <span style="vertical-align:middle;display:table-cell;">
-              Subscribe
-            </span>
-        </div>
+      <input type='hidden' name='redirect_to' value='http://www.sealiconvalley.com/thankyou.html' />
+        <input type="text" name="email" class="subscribe_email" id="input_email" placeholder="Email Address"/>
+      <input class="subscribe_button" type='submit' value='Subscribe' />
     </div>
+    </form>
 
     <div class="footer_email">
         SEALICONVALLEY@GMAIL.COM
