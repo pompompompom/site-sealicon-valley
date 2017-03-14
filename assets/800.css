@@ -233,6 +233,7 @@
     min-width: 400px;
 }
 
+
 .home_logo_header_bar {
   opacity: 0;
 }
@@ -240,6 +241,7 @@
 .home_social_container_small {
   opacity: 0;
 }
+
 .social_img_small {
     width: 30px;
     height: 30px;

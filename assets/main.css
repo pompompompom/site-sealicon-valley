@@ -716,19 +716,45 @@ body {
 }
 
 .about_container {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin:0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+.about_pic {
+  width: 80%;
+}
+
+.about_text {
+  color: #636263;
+  text-align: left;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+/*
+.about_container {
     width: 100%;
     max-width: 900px;
     height: 340px;
     display: block;
     margin: 0 auto;
     box-sizing: border-box;
-    /** add this **/
     -moz-box-sizing: border-box;
-    /** add this **/
     -webkit-box-sizing: border-box;
-    /** add this **/
     -ms-box-sizing: border-box;
-    /** add this **/
     margin-bottom: 50px;
 }
 
@@ -741,13 +767,9 @@ body {
     background-size: contain;
     padding: 10px;
     box-sizing: border-box;
-    /** add this **/
     -moz-box-sizing: border-box;
-    /** add this **/
     -webkit-box-sizing: border-box;
-    /** add this **/
     -ms-box-sizing: border-box;
-    /** add this **/
     background-position: center;
 }
 
@@ -759,19 +781,17 @@ body {
     padding: 10px;
     color: #636263;
     box-sizing: border-box;
-    /** add this **/
     -moz-box-sizing: border-box;
-    /** add this **/
     -webkit-box-sizing: border-box;
-    /** add this **/
     -ms-box-sizing: border-box;
-    /** add this **/
 }
+*/
 
 .characters_container {
   margin-bottom: 0px;
 }
 @media screen and (max-width: 800px) {
+  /*
     .about_pic {
         width: 100%;
         float: none;
@@ -784,7 +804,7 @@ body {
         height: 100%;
         margin-bottom: 80px;
     }
-    .footer {}
+    */
 
     .characters_container {
       margin-bottom: 70px;
