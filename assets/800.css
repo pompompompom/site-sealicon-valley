@@ -231,7 +231,7 @@
 }
 
 .social_container_small {
-    z-index: 100;
+    z-index: 1000000;
     position: absolute;
     top: 50%;
     left: 310px;
