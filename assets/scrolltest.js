@@ -70,10 +70,11 @@ $(window).scroll(function() {
 
     if (prevScroll == 0 && wScroll != 0) {
         // change to colored background
+        /*
         $(".header_bar_container").animate({
             backgroundColor: "#41b0f7",
         }, 150);
-
+*/
         if (homeBig) {
             $(".social_container_small").animate({
                 opacity: 1.0,
@@ -85,10 +86,11 @@ $(window).scroll(function() {
 
     } else if (prevScroll != 0 && wScroll == 0) {
         // change to transparent
+        /*
         $(".header_bar_container").animate({
             backgroundColor: "transparent",
         }, 150);
-
+*/
         if (homeBig) {
             $(".social_container_small").animate({
                 opacity: 0.0,
