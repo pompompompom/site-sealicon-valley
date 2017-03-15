@@ -215,6 +215,17 @@ body {
     padding-bottom: 20px;
     background-color: #49545e;
     color: white;
+    padding-left:10px;
+    padding-right:10px;
+
+    box-sizing: border-box;
+    /** add this **/
+    -moz-box-sizing: border-box;
+    /** add this **/
+    -webkit-box-sizing: border-box;
+    /** add this **/
+    -ms-box-sizing: border-box;
+    /** add this **/
 }
 
 .footer_email {
@@ -246,7 +257,7 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-    .bottom_tabs {
+    /*.bottom_tabs {
         display: block;
     }
     body {
@@ -254,7 +265,7 @@ body {
     }
     .footer {
         display: none;
-    }
+    }*/
     #social_container_small {
         display: none;
     }
@@ -326,11 +337,21 @@ body {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+
+
+    box-sizing: border-box;
+    /** add this **/
+    -moz-box-sizing: border-box;
+    /** add this **/
+    -webkit-box-sizing: border-box;
+    /** add this **/
+    -ms-box-sizing: border-box;
+    /** add this **/
 }
 
 .subscribe_button {
     width: 40%;
-    height: 39px;
+    height: 35px;
     text-align: center;
     font-size: 16px;
     color:white;
@@ -349,6 +370,16 @@ body {
     top: 50%;
     transform: translateY(-50%);
     display: table;
+
+
+    box-sizing: border-box;
+    /** add this **/
+    -moz-box-sizing: border-box;
+    /** add this **/
+    -webkit-box-sizing: border-box;
+    /** add this **/
+    -ms-box-sizing: border-box;
+    /** add this **/
 }
 
 .post_info {
@@ -819,6 +850,7 @@ body {
         margin-bottom: 80px;
     }
     */
+    /*
 
     .characters_container {
       margin-bottom: 70px;
@@ -827,6 +859,7 @@ body {
     .home_content {
       margin-bottom: 70px;
     }
+    */
 }
 
 
@@ -876,6 +909,16 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   margin: 0 auto;
+
+
+  box-sizing: border-box;
+  /** add this **/
+  -moz-box-sizing: border-box;
+  /** add this **/
+  -webkit-box-sizing: border-box;
+  /** add this **/
+  -ms-box-sizing: border-box;
+  /** add this **/
 }
 
 #rounded_octopus {
