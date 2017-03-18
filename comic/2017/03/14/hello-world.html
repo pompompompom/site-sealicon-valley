@@ -66,6 +66,17 @@
                     break;
             }
         }
+
+        $( document ).ready(function() {
+          var children = $("#related_post_list").children().length;
+          console.log("children: " + children);
+
+          if(children == 0) {
+            $(".related_posts").css({
+                "display": "none"
+            });
+          }
+});
     </script>
 </head>
 
@@ -423,7 +434,7 @@
                     </div>
                 </a>
                  
-                <a href='../../../../comic/2017/03/14/hello-world-blog.html'>
+                <a href='../../../../blog/2017/03/14/hello-world-blog.html'>
                     <div class="next_post">
                         next
                     </div>
@@ -450,8 +461,8 @@
 
 
 
-            <div class="masonry">
-                <ul class="post-list">
+            <div class="masonry" id="related_posts_masonry">
+                <ul class="post-list" id="related_post_list">
                          
                     <li>
                         <div class="item">
