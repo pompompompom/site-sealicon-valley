@@ -18,7 +18,7 @@
   <link href='../../../../assets/main.css' rel='stylesheet'>
   <link href='../../../../assets/800.css' rel='stylesheet'>
 
-  <link rel="shortcut icon" href="../../../../assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../../../assets/favicon.ico" type="image/x-icon" />
 
   <link rel="canonical" href="http://www.sealiconvalley.com/comic/2017/03/14/hello-octopus.html">
   <link rel="alternate" type="application/rss+xml" title="Sealicon Valley" href="/feed.xml">
@@ -34,8 +34,8 @@
   <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Octopus the Designer - Sealicon Valley</title>
 <meta property="og:title" content="Octopus the Designer" />
-<meta name="description" content="Octopus the Designer Sealicon Valley Comics About Silicon Valley" />
-<meta property="og:description" content="Octopus the Designer Sealicon Valley Comics About Silicon Valley" />
+<meta name="description" content="Octopus the Designer by Sealicon Valley" />
+<meta property="og:description" content="Octopus the Designer by Sealicon Valley" />
 <link rel="canonical" href="http://www.sealiconvalley.com/comic/2017/03/14/hello-octopus.html" />
 <meta property="og:url" content="http://www.sealiconvalley.com/comic/2017/03/14/hello-octopus.html" />
 <meta property="og:site_name" content="Sealicon Valley" />
@@ -53,7 +53,7 @@
 "headline": "Octopus the Designer",
 "image": "http://www.sealiconvalley.com/assets/comic_octopus.png",
 "datePublished": "2017-03-14T01:00:05-07:00",
-"description": "Octopus the Designer Sealicon Valley Comics About Silicon Valley",
+"description": "Octopus the Designer by Sealicon Valley",
 "url": "http://www.sealiconvalley.com/comic/2017/03/14/hello-octopus.html"}</script>
 <!-- End Jekyll SEO tag -->
 
@@ -63,7 +63,7 @@
     <meta property="og:url" content="www.sealiconvalley.com/comic/2017/03/14/hello-octopus.html" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Octopus the Designer" />
-    <meta property="og:image" content='<img src="BASE/assets/comic_octopus.png" >' />
+    <meta property="og:image" content='BASE/assets/splash_octopus.png' />
 
     <script>
         var winWidth = 520;
@@ -78,7 +78,7 @@
             switch (index) {
                 case 1:
                     console.log("1111");
-                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + 'Octopus the Designer' + '&p[url]=' + url + '&p[images][0]=' + '<img src="BASE/assets/comic_octopus.png" >', 'sharer', 'top=' +
+                    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + 'Octopus the Designer' + '&p[url]=' + url + '&p[images][0]=' + 'BASE/assets/splash_octopus.png', 'sharer', 'top=' +
                         winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
                     break;
                 case 2:
@@ -114,76 +114,6 @@
 
 <!DOCTYPE html>
 <html lang=" en ">
-
-<head>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        /* Set the width of the side navigation to 0 */
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-
-    <style>
-        /* The side navigation menu */
-
-        .sidenav {
-            height: 100%;
-            /* 100% Full-height */
-            width: 0;
-            /* 0 width - change this with JavaScript */
-            position: fixed;
-            /* Stay in place */
-            z-index: 100000000;
-            /* Stay on top */
-            top: 0;
-            right: 0;
-            overflow-x: hidden;
-            /* Disable horizontal scroll */
-            /* Place content 60px from the top */
-            transition: 0.2s;
-            /* 0.5 second transition effect to slide in the sidenav */
-            background-color: white;
-            display: flex;
-            flex-flow: column;
-        }
-        /* Position and style the close button (top right corner) */
-
-        .nav_item {
-          width: 100%;
-          height:40px;
-          display: flex;
-          align-items: center;
-          font-family: 'Open Sans', sans-serif;
-
-              font-weight: lighter;
-              font-size: 16px;
-              text-decoration: none;
-              color:black;
-
-              text-transform: uppercase;
-              letter-spacing: 2px;
-              justify-content: space-around;
-        }
-
-        .nav_item > img {
-          width: 30px;
-          height:30px;
-        }
-
-        .nav_item .nav_label {
-          width: 150px;
-          height:100%;
-          text-align: center;
-          display: flex;
-          align-items: center;
-        }
-    </style>
-
-</head>
 
 <body>
 
@@ -335,13 +265,14 @@
 
 </html>
 
+    <span itemscope itemtype="http://schema.org/Article">
 
     <div class="post_container">
         <div class="post_info">
-            <span class="post_title">
+            <span itemprop="name" class="post_title">
               Octopus the Designer
             </span>
-            <span class="post_date">
+            <span itemprop="datePublished" class="post_date">
               March 14, 2017
             </span>
 
@@ -349,9 +280,11 @@
         
 
         <div class="comic">
-            <img src="../../../../assets/comic_octopus.png" >
+          <img itemprop="image"  src="../../../../assets/comic_octopus.png" />
         </div>
-         
+        
+
+        
 
 
         <div class="share">
@@ -422,7 +355,8 @@
                         <div class="item">
                             <a class="post-link" href="../../../../comic/2017/03/14/hello-dolphin.html">
                                 <div class="related_post_excerpt_container">
-                                    <img src="../../../../assets/comic_dolphin.png" >
+
+                                    <img itemprop="image"  src="../../../../assets/splash_dolphin.png" />
 
                                 </div>
                                 <div class="related_post_title">
@@ -436,7 +370,8 @@
                         <div class="item">
                             <a class="post-link" href="../../../../comic/2017/03/14/hello-narwhal.html">
                                 <div class="related_post_excerpt_container">
-                                    <img src="../../../../assets/comic_narwhal.png" >
+
+                                    <img itemprop="image"  src="../../../../assets/splash_narwhal.png" />
 
                                 </div>
                                 <div class="related_post_title">
@@ -450,7 +385,8 @@
                         <div class="item">
                             <a class="post-link" href="../../../../comic/2017/03/14/hello-shark.html">
                                 <div class="related_post_excerpt_container">
-                                    <img src="../../../../assets/comic_shark.png" >
+
+                                    <img itemprop="image"  src="../../../../assets/splash_shark.png" />
 
                                 </div>
                                 <div class="related_post_title">
@@ -504,12 +440,11 @@
         
 
     </div>
+  </span>
     
 
 
 
-<head>
-</head>
 <div class="footer">
   <form action="https://getsimpleform.com/messages?form_api_token=d9fbe3b05597de14b1e5cc7db2ceea84" method="post">
     <div class="subscribe_container">
@@ -524,7 +459,9 @@
     </div>
 
     <div class="footer_copyright">
-        &copy; 2017 Sealicon Valley Inc. All Rights Reserved.
+        © 2017
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<span itemprop="name">Sealicon Valley</span> </span>Inc. All Rights Reserved.
     </div>
 
 </div>
